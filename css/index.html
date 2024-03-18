@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="es" class="h-100">
+<img src="data:image/jpeg;base64,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" alt="">
+<head>
+	<meta name="google-site-verification" content="Fk-AE_H6zMAn-QgljIFsOUq9WGo3u-79GucJcydCmak" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="title" content="Agencia Gucci">
+	<meta name="description" content="Habbo Agencia KinderGarten tu mejor eleccion">
+	<meta name="keywords" content="habbo, radio, agencia, Gucci, Gucciagencia, agenciGucci, diversi��n, 
+ música, juegos" />
+	<meta itemprop="image" content="http://kindergartenhb.es/images/logo.png">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://Guccihb.es/">
+	<meta property="og:title" content="Agencia Gucci">
+	<meta property="og:description" content="Habbo agencia Gucci tu mejor eleccion">
+	<meta property="og:image" content="http://kindergartenhb.es/images/logo.png">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="http://Guccihb.es/">
+	<meta property="twitter:title" content="Agencia Gucci">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<meta property="twitter:description" content="Habbo agencia Gucci tu mejor eleccion">
+	<meta property="twitter:image" content="http://kindergartenhb.es/images/logo.png">
+	<meta name="theme-color" content="#000000">
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/siteweb.css">
+	<link rel="stylesheet" href="css/glider.min.css">
+	<link rel="stylesheet" href="css/hint.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>KinderGarten</title>
+	<script type="text/javascript">
+		var publicre = '';
+	</script>
+	<meta name="google-site-verification" content="Fk-AE_H6zMAn-QgljIFsOUq9WGo3u-79GucJcydCmak" />
+</head>
+
+<body class="d-flex flex-column h-100">
+
+	<main role="main" class="flex-shrink-0">
+
+		<header class="header bgdark text-center " style="position: relative;">
+		
+			<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvi8Xtudmzn554IMQZgzuHK4ffrutp4RC8Q&s" width="100%">
+			</div>
+<img src="img/banner.jpg" alt="">
+<center><h1>color de fondo</h1></center>
+<body bgcolor=""></body>
+			</div>
+
+		</header>
+
+
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+			<div class="container-fluid">
+				<a class="navbar-brand d-block d-sm-none" href="#">KinderGarten</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="./">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="https://radio-kindergarden.webnode.es/">Radio</a></li>
+						<!--<li class="nav-item"><a class="nav-link" href="normativa">Normativa</a></li>-->
+						<li class="nav-item"><a class="nav-link" href="noticias">Noticias</a>
+						<li class="nav-item"><a class="nav-link" href="rangos">Rangos</a>
+							<li class="nav-item"><a class="nav-link" href="register">Registro</a></li>
+								<li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalogin">Iniciar Sesión</a></li> 
+								
+				</div>
+
+
+			</div>
+		</nav>
+
+		<div class="container my-4"><div class="row">
+           <div class="col-md-6 mb-4">
+               <div class="card h-100">
+                   <div class="overflow-hidden">
+                       <img src="images/banner/semana-4-3.png" class="card-img-top rounded-top" alt="¡Trabajadores Semanales!" style="object-fit: cover; height: 200px;">
+                   </div>
+                   <div class="card-body">
+                       <h5 class="card-title">¡Trabajadores Semanales!</h5>
+                       <p class="card-text"><p>Trabajadores Semanales! Esta Semana los ganadores son Parduban en Times, JF-xXPLaGaXx en Ascensos y asaditodefasito...</p>
+                       <a href="/noticias?id=7" class="btn btn-primary">Ver más</a>
+                   </div>
+                   <div class="card-footer d-flex justify-content-between align-items-center">
+                       <small class="text-muted"><i class="fas fa-clock mr-1"></i> 12 Mar, 2024</small>
+                       <span class="text-muted"><i class="fas fa-user mr-1"></i> Encargado ID: 4</span>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-6 mb-4">
+               <div class="card h-100">
+                   <div class="overflow-hidden">
+                       <img src="images/banner/aOkt2BH.png" class="card-img-top rounded-top" alt="¡Apartado de noticias! - Beta" style="object-fit: cover; height: 200px;">
+                   </div>
+                   <div class="card-body">
+                       <h5 class="card-title">¡Apartado de noticias! - Beta</h5>
+                       <p class="card-text"><p><br />&iexcl;Bienvenidos a nuestra nueva secci&oacute;n de noticias en fase beta! Estamos emocionados de...</p>
+                       <a href="/noticias?id=5" class="btn btn-primary">Ver más</a>
+                   </div>
+                   <div class="card-footer d-flex justify-content-between align-items-center">
+                       <small class="text-muted"><i class="fas fa-clock mr-1"></i> 11 Mar, 2024</small>
+                       <span class="text-muted"><i class="fas fa-user mr-1"></i> Encargado ID: 1</span>
+                   </div>
+               </div>
+           </div></div>   
+   
+   <style>
+    /* Estilos específicos para el glider */
+    .contenedor-glider {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none; /* Para navegadores Firefox */
+        -ms-overflow-style: none; /* Para navegadores IE/Edge */
+    }
+
+    .contenedor-glider::-webkit-scrollbar {
+        display: none; /* Para navegadores Chrome, Safari y Opera */
+    }
+
+    .tarjeta-glider {
+        flex: 0 0 auto;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 200px; /* Ajusta el ancho según tus necesidades */
+    }
+
+    .cabecera-tarjeta-glider {
+        text-align: center;
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+
+    .contenedor-rango-glider {
+        font-weight: bold;
+    }
+
+    .cuerpo-tarjeta-glider {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .imagen-glider {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Nuevo estilo para cambiar el cursor */
+    #glider-container-wrapper {
+        cursor: grab;
+    }
+
+    #glider-container-wrapper:active {
+        cursor: grabbing;
+    }
+</style>
+
+<div class="card">
+    <div class="card-body borde" id="glider-container-wrapper">
+        <h5 class="card-header text-center fw-bold">Horarios De Paga</h5>
+        <div class="flecha-izquierda" onmousedown="iniciarDesplazamiento(-430)" onmouseup="detenerDesplazamiento()" style="position: absolute; top: 50%; left: 1px; transform: translateY(-50%); cursor: pointer;">⮜</div>
+        <div class="contenedor-glider" id="glider-container">
+            
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">España</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="10:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/España.png" alt="España">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Argentina</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="6:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Argentina.png" alt="Argentina">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Chile</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="6:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Chile.png" alt="Chile">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Uruguay</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="6:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Uruguay.png" alt="Uruguay">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Venezuela</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="5:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Venezuela.png" alt="Venezuela">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">R. Dominicana</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="5:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/R. Dominicana.png" alt="R. Dominicana">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Estados Unidos</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="4:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Estados Unidos.png" alt="Estados Unidos">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Colombia</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="4:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Colombia.png" alt="Colombia">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Ecuador</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="4:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Ecuador.png" alt="Ecuador">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Peru</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="4:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Peru.png" alt="Peru">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Guatemala</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="3:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Guatemala.png" alt="Guatemala">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Costa Rica</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="3:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Costa Rica.png" alt="Costa Rica">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Mexico</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="3:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Mexico.png" alt="Mexico">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tarjeta-glider">
+                            <div class="cabecera-tarjeta-glider">
+                                <div class="contenedor-rango-glider">Paraguay</div>
+                            </div>
+                            <div class="cuerpo-tarjeta-glider">
+                                <span class="hint--right" aria-label="3:00 P.M.">
+                                    <img class="imagen-glider" src="images/banderas/Paraguay.png" alt="Paraguay">
+                                </span>
+                            </div>
+                        </div>        </div>
+        <div class="flecha-derecha" onmousedown="iniciarDesplazamiento(430)" onmouseup="detenerDesplazamiento()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">⮞</div>
+
+        <script>
+            var contenedorGlider = document.getElementById('glider-container');
+            var wrapper = document.getElementById('glider-container-wrapper');
+            var indexActual = 0;
+            var isMouseDown = false;
+
+            wrapper.addEventListener('mousedown', function (e) {
+                isMouseDown = true;
+                startX = e.pageX - wrapper.offsetLeft;
+                scrollLeft = contenedorGlider.scrollLeft;
+            });
+
+            wrapper.addEventListener('mouseleave', function () {
+                isMouseDown = false;
+            });
+
+            wrapper.addEventListener('mouseup', function () {
+                isMouseDown = false;
+            });
+
+            wrapper.addEventListener('mousemove', function (e) {
+                if (!isMouseDown) return;
+                e.preventDefault();
+                const x = e.pageX - wrapper.offsetLeft;
+                const walk = (x - startX) * 0.5; // Ajusta el factor según tus preferencias
+                contenedorGlider.scrollLeft = scrollLeft - walk;
+            });
+
+            function iniciarDesplazamiento(direccion) {
+                moverGlider(direccion); // Mover inmediatamente al presionar
+                intervalId = setInterval(function () {
+                    moverGlider(direccion);
+                }, 100); // Ajusta el intervalo según tus preferencias
+            }
+
+            function detenerDesplazamiento() {
+                clearInterval(intervalId);
+            }
+
+            function moverGlider(direccion) {
+                indexActual = Math.min(Math.max(indexActual + direccion, 0), contenedorGlider.scrollWidth - contenedorGlider.clientWidth);
+                contenedorGlider.scrollTo({ left: indexActual, behavior: 'smooth' });
+            }
+        </script>
+    </div>
+</div>
+
+<div class=" row my-3 	">
+   <div class=" col-12 col-md-8 ">
+      <div class="card  borde ">
+         <div class="card-body borde">
+            <div class="card-header mb-4">
+            <h5 class="fw-bold"> Gucci| Administración</h5>
+            </div>
+            <button class="glider-prev">⮜</i></button>
+            <div class="glider">
+			   
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">Surnewards</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=Surnewards&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Dueño</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">NADA</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=adrianrodass&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Dueño</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">HabbGos</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=HabbGos&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Dueño</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">7-Le</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=7-Le&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Secretario</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">jose46813</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=jose46813&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Subdirector</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">Andreita17</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=Andreita17&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Secretario</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">Bianco026</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=Bianco026&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Secretario</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">lMafecutie123</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=lMafecutie123&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Jefe de Estudios</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">Dragic.</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=Dragic.&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Secretario</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">Mimina_u.u</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=Mimina_u.u&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Secretario</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">Zaikon.-I</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=Zaikon.-I&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Jefe de Estudios</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">aguitas93</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=aguitas93&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Jefe de Estudios</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">MISS.FAYRI</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=MISS.FAYRI&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Jefe de Estudios</div>
+            </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 20px;">
+                     
+        <div style="style="text-align: center; margin-right: 20px;">	
+				<div class="nombre-usuario fw-bold">-Zens.</div>
+            <img class="" src="https://www.habbo.es/habbo-imaging/avatarimage?user=-Zens.&action=wav,crr=667&direction=2&head_direction=2&gesture=std&size=m" style="position: relative; margin-top: -5px;  left: 14px; top: -3px;; z-index: 2;">
+            <br>
+            <img src="img/Podium.png" alt="Nueva Imagen"  style="margin-top: -40px; position: relative; z-index: 1;"></div>
+            <div class="rango-container">Dueño</div>
+            </div>
+                    </div>
+            <button class="glider-next">⮞</i></button>
+         </div>
+ </div>
+      <div class="card ">
+         <div class="card-body borde">
+            <h5 class="card-header fw-bold">Membresias</h5>
+            <button class="glider-prev glipre">⮜</i></button>
+            <div class="glidi">
+               
+                        
+                             <div class=" bgdark text-center w-100 m-0 h-100">
+                                 <div class="card-body">
+                                     <img src="./images/badges/PLN.gif" width="60" height="60" class="mb-3" />
+                                     <div class="card-title fw-bold">Becado | KND</div>
+                                     <div class="card-title">
+                                         <span class="fw-bold">55 $ </span>
+                                         <small class="text-muted">/mes</small>
+                                     </div>
+                                     <div class="card-text">(Regla Libre, Fila Vip, Guarda paga y Reducción). Adquierela con un Jefe de Estudios+.
+</div>
+                                 </div>
+                             </div>
+                        
+                     
+                        
+                             <div class=" bgdark text-center w-100 m-0 h-100">
+                                 <div class="card-body">
+                                     <img src="./images/badges/reducion.gif" width="60" height="60" class="mb-3" />
+                                     <div class="card-title fw-bold">Dormilones | KND</div>
+                                     <div class="card-title">
+                                         <span class="fw-bold">40 $ </span>
+                                         <small class="text-muted">/mes</small>
+                                     </div>
+                                     <div class="card-text">Reducción de nomina y bonificación.  Adquierela con un Jefe de Estudios+.</div>
+                                 </div>
+                             </div>
+                        
+                     
+                        
+                             <div class=" bgdark text-center w-100 m-0 h-100">
+                                 <div class="card-body">
+                                     <img src="./images/badges/RGL.gif" width="60" height="60" class="mb-3" />
+                                     <div class="card-title fw-bold">Rebelde | KND</div>
+                                     <div class="card-title">
+                                         <span class="fw-bold">30 $ </span>
+                                         <small class="text-muted">/mes</small>
+                                     </div>
+                                     <div class="card-text">Chat libre, Regla libre y movimiento.  Adquierela con un Jefe de Estudios+.</div>
+                                 </div>
+                             </div>
+                        
+                     
+                        
+                             <div class=" bgdark text-center w-100 m-0 h-100">
+                                 <div class="card-body">
+                                     <img src="./images/badges/fila.gif" width="60" height="60" class="mb-3" />
+                                     <div class="card-title fw-bold">Fila VIP | KND</div>
+                                     <div class="card-title">
+                                         <span class="fw-bold">10 $ </span>
+                                         <small class="text-muted">/mes</small>
+                                     </div>
+                                     <div class="card-text">Acceso 5 minutos antes. Costo: 10c. Adquiérela con Jefe De Estudios+.</div>
+                                 </div>
+                             </div>
+                        
+                     
+                        
+                             <div class=" bgdark text-center w-100 m-0 h-100">
+                                 <div class="card-body">
+                                     <img src="./images/badges/GRPG.gif" width="60" height="60" class="mb-3" />
+                                     <div class="card-title fw-bold">Párvulos Tortuga | KND</div>
+                                     <div class="card-title">
+                                         <span class="fw-bold">10 $ </span>
+                                         <small class="text-muted">/mes</small>
+                                     </div>
+                                     <div class="card-text">Con esta placa tendrás dos dias a partir de la hora de paga, para poder ir a base a reclamar tu paga. Ya sea con Ascenso o con C. Tiene un costo de 10c MENSUALES. Comprala con un Jfe de Estudios+.</div>
+                                 </div>
+                             </div>
+                        
+                                 </div>
+            <button class="glider-next gline">⮞</i></button>
+         </div>
+      </div>
+   </div>
+   <div class="col ">
+      <a class="twitter-timeline" data-height="310" data-chrome="noheader, nofooter" href="https://twitter.com/Kindergarten_hb">Tweets</a>
+      <iframe class="pt-2" src="https://discord.com/widget?id=1052787106528886825&theme=dark" width="348" height="320" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <!-- Modal -->
+      <div class="modal fade" id="modalogin" tabindex="-1" role="dialog" aria-labelledby="modalogin" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <form class="px-4 py-3 needs-validation" novalidate method="POST" action="/">
+                     <div class="form-floating mb-3">
+                        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Usuario" required />
+                        <label for="floatingInput"><i class="fas fa-user"></i> Usuario</label>
+                     </div>
+                     <div class="form-floating mb-3">
+                        <input type="password" name="clave" class="form-control" id="floatingInput" placeholder="Contraseña" required />
+                        <label for="floatingInput"><i class="fas fa-lock"></i> Contraseña</label>
+                     </div>
+                     <input type="hidden" name="recaptcha_response" class="recaptchaResponse">
+                     <div class="d-grid gap-2">
+                        <button type="submit" name="loginuser" class="mt-2 btn btn-success btn-block btn-lg">Ingresar</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      </section>
+      <!-- /End-Content Section -->
+   </div>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+<footer class="footer bg-dark text-white mt-auto py-3">
+
+	<div class="container small">
+
+		<div class="d-flex justify-content-md-between">
+		
+		
+			<div>© 2023 KinderGarten Derechos reservados a sus respectivos dueños.</div>
+			
+			    <div>Desarrollado por GhostStore  </div>
+			
+		</div>
+
+	</div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="modalogin" tabindex="-1" aria-labelledby="#modalogin" aria-hidden="true">
+
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form class="px-4 py-3 needs-validation" novalidate method="POST" action="/">
+					<div class="form-floating mb-3">
+						<input type="text" name="username" class="form-control" id="floatingInput" placeholder="Usuario" required />
+						<label for="floatingInput"><i class="fas fa-user"></i> Usuario</label>
+					</div>
+
+					<div class="form-floating mb-3">
+						<input type="password" name="clave" class="form-control" id="floatingInput" placeholder="Contraseña" required />
+						<label for="floatingInput"><i class="fas fa-lock"></i> Contraseña</label>
+					</div>
+					<input type="hidden" name="recaptcha_response" class="recaptchaResponse">
+					<div class="d-grid gap-2">
+						<button type="submit" name="loginuser" class="mt-2 btn btn-success btn-block btn-lg">Ingresar</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<link rel="stylesheet" href="css/siteall.css?7.2021">
+<script type="text/javascript" src="js/jquery-3.5.1.min.js?7.2021"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js?7.2021"></script>
+<script type="text/javascript" src="js/datatables.js"></script>
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/common.js?7.2021"></script>
+<script type="text/javascript" src="js/jplayer.js"></script>
+<script type="text/javascript" src="js/glider.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/radio.js?7.2021"></script>
+<script type="text/javascript" src="js/all.min.js?7.2021"></script>
+<script type="text/javascript" src='https://www.google.com/recaptcha/api.js?render='></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script type="text/javascript">
+	grecaptcha.ready(function() {
+		grecaptcha.execute(publicre, {
+				action: 'register'
+			})
+			.then(function(token) {
+				var recaptchaResponse = $(".recaptchaResponse");
+				if (recaptchaResponse != null) {
+					recaptchaResponse.val(token);
+				}
+			});
+	});
+</script>
+</body>
+
+</html><script type="text/javascript">
+   chatfunt();
+   setInterval(chatfunt, 12000);
+   
+   function chatfunt() {
+   	if ($(".chatboxmessage")) {
+   		get_messages_chat(".chatboxmessage");
+   		$('.chatboxmessage').animate({
+   			scrollTop: ($('.chatboxmessage')[0].scrollHeight) + 30000
+   		}, "slow");
+   	}
+   }
+   $(".chatform").submit(function(event) {
+   	chatfunt();
+   	event.preventDefault();
+   });
+</script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.8.2/dist/glider.min.js"></script>
+<script>
+    window.addEventListener('load', function () {
+        var glider = new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            dots: '.glider-dots',
+            draggable: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+
+        // Personaliza la posición de los puntos de navegación
+        glider.ele.querySelector('.glider-dots').style.bottom = '10px';
+    });
+</script>
+
+
+<Style>
+	  .rango-container {
+        background-color: black;
+        color: white;
+        padding: 4px;
+        border-radius: 10px;
+		text-align: center;
+		font-weight: 700; /* Aplica negrita para el nombre del rango */
+
+	    }
+		.nombre-usuario {
+		text-align: center;
+		font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto */
+        font-weight: 300; /* Aplica un peso más ligero para el nombre de usuario */
+    }    }
+	</style>
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
